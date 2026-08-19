@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    justify-content: space-between;
+        align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    z-index: 1000;
+    display: flex;
+
+}
+header .navbar a{
+       padding: 20px;
+     text-decoration: none;
+      color:#fff;
+      font-size:1rem;
+   font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    gap:5rem;
+
+}
+header .navbar a:hover{
+    background:  hsl(167, 34%, 41%);
+    border-radius: 3rem;
+}
+header .logo{
+      font-size:2.5rem ;
+      font-weight: bolder;
+     text-decoration: none;
+      color:#fff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    
+}
+.bage1{
+   display: flex;
+    flex-direction: column;       /* جعل العناصر تترتب عمودياً */
+    justify-content: center;      /* توسيط المحتوى عمودياً */
+    align-items: center;          /* توسيط المحتوى أفقياً */
+    min-height: 100vh;
+    background: url(images/desktop/image-header.jpg) no-repeat;
+    background-position: center -100px; /* كلما زادت القيمة بالسالب، ارتفعت الصورة للأعلى أكثر */
+    background-size: 100% auto;
+}
+.bage1 h4{
+color: #fff;
+    font-size: 3rem;              /* يمكنك تكبير حجم الخط قليلاً ليناسب التصميم */
+    text-align: center;           /* لضمان توسيط النص داخل العنصر نفسه */
+    text-transform: uppercase;    /* حسب تصميم الفرت إند منتور */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transform: translateY(-130px);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+.bage1 img{
+     transform: translateY(-40px);
+    
+}
+.bage2
+{
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+}
+.bage2 .content-box{
+     width: 50%;
+    background: hsl(0, 100%, 100%);
+    flex-direction: column;
+    justify-content: center; /* توسيط المحتوى عمودياً */
+    padding: 80px 100px;
+    align-items: flex-start;  /* يحاذي جميع العناصر لليسار */
+    padding-left: 15%;
+}
+.bage2 .content-box h4{
+   font-family: 'Fraunces', serif;
+    font-weight: 900;
+     color: hsl(212, 28%, 18%);
+     font-size: 3rem;
+     line-height: 1.2;
+     margin-bottom: 30px;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+     transform: translateY(100px);
+     padding-right: 10px;
+     padding: top 20px; ;
+     padding-bottom:20px ;
+    
+}
+.bage2 .content-box p{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(232, 10%, 55%);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+      transform: translateY(100px);
+     
+}
+
+.bage2 .content-box .btn {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: hsl(212, 28%, 18%);
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    z-index: 1;
+       transform: translateY(100px);
+}
+
+
+.bage2 .content-box .btn::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: -6px;
+    right: -6px;
+    height: 10px;
+    background-color: hsl(51, 100%, 49%); /* اللون الأصفر الخاص بالتصميم */
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.4; /* ليكون شفافاً قليلاً كما في التصميم الأصلي */
+    transition: 0.3s;
+}
+
+/* جعل الخط كاملاً عند تمرير الماوس فوق الزر */
+.bage2 .content-box .btn:hover::after {
+    opacity: 1;
+}
+.bage2 .imge-box{
+      width: 50%;
+    height: 100%;
+}
+.bage2 .imge-box img {
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.bage3
+{
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+}
+.bage3 .content-box{
+      width: 50%;
+    background: hsl(0, 100%, 100%);
+    flex-direction: column;
+    justify-content: center; /* توسيط المحتوى عمودياً */
+    padding: 80px 100px;
+    align-items: flex-start;  /* يحاذي جميع العناصر لليسار */
+    padding-left: 15%;
+}
+.bage3 .content-box h4{
+   font-family: 'Fraunces', serif;
+    font-weight: 900;
+     color: hsl(212, 28%, 18%);
+     font-size: 3rem;
+     line-height: 1.2;
+     margin-bottom: 30px;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+     transform: translateY(100px);
+     padding-right: 10px;
+     padding: top 20px; ;
+     padding-bottom:20px ;
+    
+}
+.bage3 .content-box p{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(232, 10%, 55%);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+      transform: translateY(100px);
+     
+}
+
+.bage3 .content-box .btn {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: hsl(212, 28%, 18%);
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    z-index: 1;
+       transform: translateY(100px);
+}
+
+
+.bage3 .content-box .btn::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: -6px;
+    right: -6px;
+    height: 10px;
+    background-color:hsl(7, 99%, 70%); 
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.4; /* ليكون شفافاً قليلاً كما في التصميم الأصلي */
+    transition: 0.3s;
+}
+
+/* جعل الخط كاملاً عند تمرير الماوس فوق الزر */
+.bage3 .content-box .btn:hover::after {
+    opacity: 1;
+}
+.bage3 .imge-box{
+     width: 50%;
+    height: 100%;
+}
+.bage3 .imge-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* لضمان ملء الصورة للمساحة بدون تشويه */
+    display: block;
+}
+.bage4 {
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+}
+.bage4 .box1{
+     width: 50%;
+}
+.bage4 .box2 {
+     width: 50%;
+    object-fit: cover;
+}
+.bage4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.bage4 .box1 .text{
+        flex-direction: column;
+    justify-content: center; /* توسيط المحتوى عمودياً */
+    padding: 80px 100px;
+    align-items: flex-start; 
+     transform: translateY(-250px);
+}
+
+.bage4 .box2 .text{
+        flex-direction: column;
+    justify-content: center; /* توسيط المحتوى عمودياً */
+    padding: 80px 100px;
+    align-items: flex-start; 
+     transform: translateY(-250px);
+
+}
+.bage4 .box1 .text h2{
+ position: relative;
+ left:120px;
+
+ bottom:60px;
+   font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(167, 34%, 41%);
+    font-size: 40px;
+}
+.bage4 .box2 .text h2{
+ position: relative;
+ left:140px;
+
+ bottom:60px;
+   font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(198, 62%, 26%);
+    font-size: 40px;
+}
+.bage4 .box1 .text p{
+
+  width: 350px;
+  line-height: 1.5rem;
+  position: relative;
+  left: 110px;
+  bottom: 40px;
+  color: hsl(167, 34%, 41%);
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight:bolder ;
+}
+
+.bage4 .box2 .text p{
+
+  width: 350px;
+  line-height: 1.5rem;
+  position: relative;
+  left: 110px;
+  bottom: 40px;
+  color:hsl(198, 62%, 26%);
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bolder;
+}
+.box-cotainer{
+    display: flex;
+    justify-content: center;
+}
+/* --- Bage5 (Client Testimonials) Styles --- */
+.bage5 {
+    padding: 100px 20px;
+    background-color: hsl(0, 0%, 100%); /* أو لون خلفية الصفحة المناسب لديك */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* عنوان القسم العلوي */
+.bage5 .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(232, 10%, 55%);
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* الحاوية التي تجمع الكروت الثلاثة بجانب بعضها */
+.bage5 .box-cotainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* الكارت الفردي لكل شخص */
+.bage5 .box1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* تنسيق الصورة الدائرية */
+.bage5 .box1 .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.bage5 .box1 .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* نص التقييم */
+.bage5 .box1 p {
+    font-family: 'Barlow', sans-serif;
+    color: hsl(232, 10%, 55%);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* اسم الشخص */
+.bage5 .box1 h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(212, 28%, 18%);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* المسمى الوظيفي */
+.bage5 .box1 h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: hsl(232, 10%, 55%);
+    font-size: 0.85rem;
+}
+.images {
+    width: 100%;
+}
+
+.images .one {
+    display: flex;
+    width: 100%;
+    height:550px;
+}
+
+.images .one img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.footer {
+    background: hsl(168, 44%, 70%);
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 20px;
+}
+
+
+/* Logo */
+
+.footer-logo {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+
+    color: hsl(167, 40%, 30%);
+    text-decoration: none;
+
+    margin-bottom: 45px;
+}
+
+
+/* Navigation */
+
+.footer-nav {
+    display: flex;
+    gap: 50px;
+
+    margin-bottom: 70px;
+}
+
+.footer-nav a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: hsl(167, 40%, 30%);
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: white;
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.social-icons a {
+    color: hsl(167, 40%, 30%);
+    font-size: 1.5rem;
+
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+/* =========================
+   Mobile / Responsive
+   ========================= */
+
+.menu-btn {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        font-size: 1.8rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        background: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+
+    /* Hero */
+
+    .bage1 {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bage1 h4 {
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+
+
+    /* Bage 2 */
+
+    .bage2 {
+        flex-direction: column;
+    }
+
+    .bage2 .content-box,
+    .bage2 .imge-box {
+        width: 100%;
+    }
+
+
+    /* Bage 3 */
+
+    .bage3 {
+        flex-direction: column;
+    }
+
+    .bage3 .content-box,
+    .bage3 .imge-box {
+        width: 100%;
+    }
+
+
+    /* Bage 4 */
+
+    .bage4 {
+        flex-direction: column;
+    }
+
+    .bage4 .box1,
+    .bage4 .box2 {
+        width: 100%;
+    }
+
+
+    /* Testimonials */
+
+    .bage5 .box-cotainer {
+        flex-direction: column;
+    }
+
+
+    /* Gallery */
+
+    .images .one {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .images .one img {
+        width: 50%;
+        height: 250px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        min-height: 300px;
+    }
+
+    .footer-nav {
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+ .navbar {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        width: 200px;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+        .navbar a {
+        color: hsl(212, 28%, 18%) !important;
+        padding: 15px;
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+        background: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
